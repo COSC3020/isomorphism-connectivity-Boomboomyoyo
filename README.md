@@ -10,3 +10,10 @@ might help with the notation for mathematical expressions.
 $G_1=(V_1 , E_1)$ is isomorphic to $G_2 = (V_2, E_2)$ if there exists a
 one-to-one and onto function (bijection) $f: V_1 \rightarrow V_2$ such that $(u,v)
 \in E_1$ iff $(f(u),f(v)) \in E_2$.
+
+Informally, a completely connected graph is one where all nodes are connected to all other nodes. It can be simply shown that a pair of isomorphic graphs which are not completely connected are still isomorphic. 
+
+Formally:
+Assume that if two graphs $A$ and $B$ are isomorphic, and they are not completely connected. In this case, this means that they hold to the definition of isomorphism where for $G_A=(V_1 , E_1)$ and $G_B = (V_2, E_2)$ and there exists a bijection $f: V_1 \rightarrow V_2$ such that $(u,v) \in E_1$ iff $(f(u),f(v)) \in E_2$.
+
+Now, since graphs $A$ and $B$ are not completely connected, there exists a pair of nodes in both graph $A$ and $B$ for which there is no edge between them, but for all other nodes and edges there is a bijection such that $(u,v) \in E_1$ iff $(f(u),f(v)) \in E_2$. This does not violate the definition of isomorphism, so two arbitrary graphs $A$ and $B$ can be isomorphic without being completely connected.
