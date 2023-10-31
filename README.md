@@ -14,6 +14,6 @@ one-to-one and onto function (bijection) $f: V_1 \rightarrow V_2$ such that $(u,
 Informally, a completely connected graph is one where all nodes are connected to all other nodes. It can be simply shown that a pair of isomorphic graphs which are not completely connected are still isomorphic. 
 
 Formally:
-Assume that if two graphs $A$ and $B$ are isomorphic, and they are not completely connected. In this case, this means that they hold to the definition of isomorphism where for $G_A=(V_1 , E_1)$ and $G_B = (V_2, E_2)$ and there exists a bijection $f: V_1 \rightarrow V_2$ such that $(u,v) \in E_1$ iff $(f(u),f(v)) \in E_2$.
+Consider two graphs, $G_A$ and $G_B$, each composed of a pair of unconnected nodes, with nodes $N_{1A}$ and $N_{2A}$ in $G_A$, as well as $N_{1B}$ and $N_{2B}$ in $G_B$. Note that these graphs are not completely connected because there is edge between the two nodes in either graph.
 
-Now, since graphs $A$ and $B$ are not completely connected, there exists a pair of nodes in both graph $A$ and $B$ for which there is no edge between them, but for all other nodes and edges there is a bijection such that $(u,v) \in E_1$ iff $(f(u),f(v)) \in E_2$. This does not violate the definition of isomorphism, so two arbitrary graphs $A$ and $B$ can be isomorphic without being completely connected.
+Now, consider the function f, which maps node $N_{1A}$ to node $N_{1B}$ and $N_{2A}$ to node $N_{2B}$. This function is bijective, as it maps each node in $G_A$ to a single node in $G_B$, and all nodes in both graphs are mapped to or from. Then these two graphs are by definition isomorphic. So, two isomorphic graphs do not have to be completely connected.
